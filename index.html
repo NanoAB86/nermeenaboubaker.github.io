@@ -1,71 +1,101 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <title>Nermeen Abou Baker — homepage</title>
-  <style>
-    :root{--accent:#0b74de;--bg:#f8fbff;--card:#ffffff;--muted:#556}
-    body{font-family:Inter,system-ui,Arial;line-height:1.45;margin:0;background:var(--bg);color:var(--muted)}
-    .container{max-width:880px;margin:40px auto;padding:20px}
-    header{display:flex;gap:18px;align-items:center}
-    .avatar{width:88px;height:88px;border-radius:12px;background:#ddd;flex:0 0 88px}
-    h1{margin:.1rem 0;font-size:1.6rem}
-    .tagline{color:#354; margin:0 0 12px 0}
-    .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 20px rgba(25,40,70,.06);margin-top:18px}
-    ul.clean{padding-left:1rem}
-    footer{font-size:0.85rem;color:#667;margin-top:26px}
-    nav a{margin-right:14px;color:var(--accent);text-decoration:none;font-weight:600}
-  </style>
+    <meta charset="UTF-8">
+    <title>Nermeen Abou Baker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
+        h1 { font-size: 2em; margin-bottom: 0.2em; }
+        h2 { border-bottom: 2px solid #333; padding-bottom: 5px; margin-top: 1.5em; }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .section { margin-bottom: 1.5em; }
+        .project, .publication { margin-bottom: 0.8em; }
+        table { width: 100%; border-collapse: collapse; }
+        td { vertical-align: top; padding: 2px 10px; }
+        .skills, .languages { margin-bottom: 1em; }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <header>
-      <div class="avatar" aria-hidden="true"></div>
-      <div>
-        <h1>Nermeen Abou Baker</h1>
-        <div class="tagline">Short tagline — researcher / developer / designer</div>
-        <nav>
-          <a href="#about">About</a>
-          <a href="#research">Research</a>
-          <a href="#news">News</a>
-          <a href="#publications">Publications</a>
-        </nav>
-      </div>
-    </header>
 
-    <section id="about" class="card">
-      <h2>About</h2>
-      <p>Write 2–4 sentences about who you are, what you do, and what you care about. Keep it readable and direct.</p>
-    </section>
+<h1>Nermeen Abou Baker</h1>
 
-    <section id="research" class="card">
-      <h2>Research Interests</h2>
-      <ul class="clean">
-        <li>Topic 1 — short note</li>
-        <li>Topic 2 — short note</li>
-        <li>Topic 3 — short note</li>
-      </ul>
-    </section>
+<div class="section">
+    <h2>Personal Information</h2>
+    <p>Location: Bottrop, Germany<br>
+    Email: <a href="mailto:Nermeen86@gmail.com">Nermeen86@gmail.com</a><br>
+    Google Scholar: <a href="https://scholar.google.de/citations?user=3KL3QSsAAAAJ&hl=de&oi=ao" target="_blank">Link</a><br>
+    Date: 25.02.2025</p>
+</div>
 
-    <section id="news" class="card">
-      <h2>News</h2>
-      <ul>
-        <li><strong>2025-10-31</strong> — Launched the new site.</li>
-        <li><strong>2025-06-01</strong> — Published paper on something interesting.</li>
-      </ul>
-    </section>
+<div class="section">
+    <h2>Personal Statement</h2>
+    <p>I am an AI researcher specializing in efficient computer vision models for sustainable AI. My work focuses on transfer learning and state-of-the-art finetuning methods to reduce data and compute requirements. I develop multi-modal AI and improve model selection beyond traditional benchmarks. My applied research includes AI for sustainability and X-ray image analysis. Currently, I am optimizing foundation models for high-precision, low-energy industrial applications.</p>
+</div>
 
-    <section id="publications" class="card">
-      <h2>Publications</h2>
-      <ol>
-        <li>Title. Journal. Year. <em>Short note.</em></li>
-      </ol>
-    </section>
+<div class="section">
+    <h2>Education</h2>
+    <p><strong>PhD student (03.2020 - Present)</strong><br>
+    Ruhr Universität Bochum, Germany<br>
+    Thesis: Advancement of recycling systems through multi-modal transfer learning.<br>
+    Supervisors: Prof. Dr. Tobias Glasmachers, Prof. Dr. Uwe Handmann.</p>
 
-    <footer>
-      Contact: <a href="mailto:nermeen.baker@hs-ruhrwest.de">you@example.com</a> · <a href="https://github.com/nermeenaboubaker">Github</a>
-    </footer>
-  </div>
+    <p><strong>M.Sc. in Computer Security (12.2013 - 11.2016)</strong><br>
+    University of Liverpool, UK<br>
+    Thesis: Smartphone forensics analysis of social networking.</p>
+
+    <p><strong>Bachelor in Telecommunication Engineering (09.2003 - 11.2008)</strong><br>
+    HIAST, Syria<br>
+    Thesis: Design and implementation of an ultra-wideband VHF/UHF power amplifier using transmission line transformer.</p>
+</div>
+
+<div class="section">
+    <h2>Research Experience</h2>
+    <p><strong>Research assistant (01.2020 - Present)</strong><br>
+    Hochschule Ruhr West, Bottrop, Germany<br>
+    AI research focusing on computer vision, transfer learning for automated waste sorting, and X-ray-based detection of electronic components.</p>
+</div>
+
+<div class="section">
+    <h2>Projects</h2>
+    <p class="project"><strong>Transfer Hub (01.2025 - Present)</strong><br>
+    Funded by the Ministry of Economic Affairs and the EU. Developing AI solutions for data analysis, automation, and digital product passports.</p>
+    
+    <p class="project"><strong>Digital Zirkulär Ruhr (04.2024 - 01.2025)</strong><br>
+    Applying AI for automation and resource efficiency to help SMEs adopt data-driven circular economy models.</p>
+
+    <p class="project"><strong>Prosperkolleg (01.2020 - 03.2024)</strong><br>
+    Developed and applied advanced AI methods to automate recycling processes in real-world plants.</p>
+</div>
+
+<div class="section">
+    <h2>Publications</h2>
+    <p class="publication"><strong>Scientific Reports (2024)</strong> - One size does not fit all in evaluating model selection scores for image classification.</p>
+    <p class="publication"><strong>Machine Learning and Knowledge Extraction (2024)</strong> - Parameter-Efficient Fine-Tuning of Large Pretrained Models for Instance Segmentation Tasks.</p>
+    <!-- You can continue adding all publications here -->
+</div>
+
+<div class="section">
+    <h2>Technical Skills</h2>
+    <p class="skills">
+    AI/Deep Learning: Multi-modal learning, foundation models, parameter-efficient finetuning.<br>
+    Programming: Python, MATLAB, Shell scripting.<br>
+    Frameworks & Libraries: PyTorch, Keras, Hugging Face Transformers, OpenCV.<br>
+    Data Analysis: Data pre-processing, feature engineering, statistical analysis.<br>
+    Hardware: GPU computing, X-ray imaging systems, sensor integration.
+    </p>
+</div>
+
+<div class="section">
+    <h2>Languages</h2>
+    <p class="languages">
+    Arabic: Native<br>
+    English: Very good<br>
+    German: Intermediate<br>
+    French: Beginner
+    </p>
+</div>
+
 </body>
 </html>
