@@ -1,100 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Nermeen Abou Baker</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
-        body { font-family: Arial, sans-serif; margin: 40px; line-height: 1.6; }
-        h1 { font-size: 2em; margin-bottom: 0.2em; }
-        h2 { border-bottom: 2px solid #333; padding-bottom: 5px; margin-top: 1.5em; }
-        a { color: #0066cc; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        .section { margin-bottom: 1.5em; }
-        .project, .publication { margin-bottom: 0.8em; }
-        table { width: 100%; border-collapse: collapse; }
-        td { vertical-align: top; padding: 2px 10px; }
-        .skills, .languages { margin-bottom: 1em; }
-    </style>
+<meta charset="UTF-8">
+<title>Nermeen Abou Baker</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        display: flex;
+        min-height: 100vh;
+    }
+    /* Sidebar */
+    .sidebar {
+        width: 250px;
+        background-color: #2c3e50;
+        color: white;
+        padding: 20px;
+        position: fixed;
+        height: 100%;
+        overflow-y: auto;
+    }
+    .sidebar h2 {
+        margin-top: 0;
+    }
+    .sidebar a {
+        color: white;
+        text-decoration: none;
+        display: block;
+        margin: 10px 0;
+    }
+    .sidebar a:hover {
+        text-decoration: underline;
+    }
+
+    /* Main content */
+    .main {
+        margin-left: 270px;
+        padding: 40px;
+        max-width: 900px;
+    }
+
+    h1 { font-size: 2em; margin-bottom: 0.3em; }
+    h2 { border-bottom: 2px solid #333; padding-bottom: 5px; margin-top: 1.5em; }
+    h3 { margin-top: 1em; }
+
+    .section { margin-bottom: 2em; }
+    .project, .publication { margin-bottom: 0.8em; }
+    table { width: 100%; border-collapse: collapse; }
+    td { vertical-align: top; padding: 2px 10px; }
+    .skills, .languages { margin-bottom: 1em; }
+</style>
 </head>
 <body>
 
-<h1>Nermeen Abou Baker</h1>
-
-<div class="section">
-    <h2>Personal Information</h2>
-    <p>Location: Bottrop, Germany<br>
-    Email: <a href="mailto:Nermeen86@gmail.com">Nermeen86@gmail.com</a><br>
-    Google Scholar: <a href="https://scholar.google.de/citations?user=3KL3QSsAAAAJ&hl=de&oi=ao" target="_blank">Link</a><br>
-    Date: 25.02.2025</p>
+<div class="sidebar">
+    <h2>Nermeen Abou Baker</h2>
+    <a href="#personal">Personal Info</a>
+    <a href="#statement">Personal Statement</a>
+    <a href="#education">Education</a>
+    <a href="#research">Research Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#publications">Publications</a>
+    <a href="#skills">Skills & Languages</a>
 </div>
 
-<div class="section">
-    <h2>Personal Statement</h2>
-    <p>I am an AI researcher specializing in efficient computer vision models for sustainable AI. My work focuses on transfer learning and state-of-the-art finetuning methods to reduce data and compute requirements. I develop multi-modal AI and improve model selection beyond traditional benchmarks. My applied research includes AI for sustainability and X-ray image analysis. Currently, I am optimizing foundation models for high-precision, low-energy industrial applications.</p>
-</div>
+<div class="main">
 
-<div class="section">
-    <h2>Education</h2>
-    <p><strong>PhD student (03.2020 - Present)</strong><br>
-    Ruhr Universität Bochum, Germany<br>
-    Thesis: Advancement of recycling systems through multi-modal transfer learning.<br>
-    Supervisors: Prof. Dr. Tobias Glasmachers, Prof. Dr. Uwe Handmann.</p>
+    <div id="personal" class="section">
+        <h2>Personal Information</h2>
+        <p>Location: Bottrop, Germany<br>
+        Email: <a href="mailto:Nermeen86@gmail.com">Nermeen86@gmail.com</a><br>
+        Google Scholar: <a href="https://scholar.google.de/citations?user=3KL3QSsAAAAJ&hl=de&oi=ao" target="_blank">Link</a><br>
+        Date: 25.02.2025</p>
+    </div>
 
-    <p><strong>M.Sc. in Computer Security (12.2013 - 11.2016)</strong><br>
-    University of Liverpool, UK<br>
-    Thesis: Smartphone forensics analysis of social networking.</p>
+    <div id="statement" class="section">
+        <h2>Personal Statement</h2>
+        <p>I am an AI researcher specializing in efficient computer vision models for sustainable AI. My work focuses on transfer learning and state-of-the-art finetuning methods to reduce data and compute requirements. I develop multi-modal AI and improve model selection beyond traditional benchmarks. My applied research includes AI for sustainability and X-ray image analysis. Currently, I am optimizing foundation models for high-precision, low-energy industrial applications.</p>
+    </div>
 
-    <p><strong>Bachelor in Telecommunication Engineering (09.2003 - 11.2008)</strong><br>
-    HIAST, Syria<br>
-    Thesis: Design and implementation of an ultra-wideband VHF/UHF power amplifier using transmission line transformer.</p>
-</div>
+    <div id="education" class="section">
+        <h2>Education</h2>
+        <p><strong>PhD student (03.2020 - Present)</strong><br>
+        Ruhr Universität Bochum, Germany<br>
+        Thesis: Advancement of recycling systems through multi-modal transfer learning.<br>
+        Supervisors: Prof. Dr. Tobias Glasmachers, Prof. Dr. Uwe Handmann.</p>
 
-<div class="section">
-    <h2>Research Experience</h2>
-    <p><strong>Research assistant (01.2020 - Present)</strong><br>
-    Hochschule Ruhr West, Bottrop, Germany<br>
-    AI research focusing on computer vision, transfer learning for automated waste sorting, and X-ray-based detection of electronic components.</p>
-</div>
+        <p><strong>M.Sc. in Computer Security (12.2013 - 11.2016)</strong><br>
+        University of Liverpool, UK<br>
+        Thesis: Smartphone forensics analysis of social networking.</p>
 
-<div class="section">
-    <h2>Projects</h2>
-    <p class="project"><strong>Transfer Hub (01.2025 - Present)</strong><br>
-    Funded by the Ministry of Economic Affairs and the EU. Developing AI solutions for data analysis, automation, and digital product passports.</p>
-    
-    <p class="project"><strong>Digital Zirkulär Ruhr (04.2024 - 01.2025)</strong><br>
-    Applying AI for automation and resource efficiency to help SMEs adopt data-driven circular economy models.</p>
+        <p><strong>Bachelor in Telecommunication Engineering (09.2003 - 11.2008)</strong><br>
+        HIAST, Syria<br>
+        Thesis: Design and implementation of an ultra-wideband VHF/UHF power amplifier using transmission line transformer.</p>
+    </div>
 
-    <p class="project"><strong>Prosperkolleg (01.2020 - 03.2024)</strong><br>
-    Developed and applied advanced AI methods to automate recycling processes in real-world plants.</p>
-</div>
+    <div id="research" class="section">
+        <h2>Research Experience</h2>
+        <p><strong>Research assistant (01.2020 - Present)</strong><br>
+        Hochschule Ruhr West, Bottrop, Germany<br>
+        AI research focusing on computer vision, transfer learning for automated waste sorting, and X-ray-based detection of electronic components.</p>
+    </div>
 
-<div class="section">
-    <h2>Publications</h2>
-    <p class="publication"><strong>Scientific Reports (2024)</strong> - One size does not fit all in evaluating model selection scores for image classification.</p>
-    <p class="publication"><strong>Machine Learning and Knowledge Extraction (2024)</strong> - Parameter-Efficient Fine-Tuning of Large Pretrained Models for Instance Segmentation Tasks.</p>
-    <!-- You can continue adding all publications here -->
-</div>
+    <div id="projects" class="section">
+        <h2>Projects</h2>
+        <p class="project"><strong>Transfer Hub (01.2025 - Present)</strong><br>
+        Developing AI solutions for data analysis, automation, and digital product passports for resource efficiency and sustainability.</p>
+        
+        <p class="project"><strong>Digital Zirkulär Ruhr (04.2024 - 01.2025)</strong><br>
+        Applying AI for automation and resource efficiency to help SMEs adopt data-driven circular economy models.</p>
 
-<div class="section">
-    <h2>Technical Skills</h2>
-    <p class="skills">
-    AI/Deep Learning: Multi-modal learning, foundation models, parameter-efficient finetuning.<br>
-    Programming: Python, MATLAB, Shell scripting.<br>
-    Frameworks & Libraries: PyTorch, Keras, Hugging Face Transformers, OpenCV.<br>
-    Data Analysis: Data pre-processing, feature engineering, statistical analysis.<br>
-    Hardware: GPU computing, X-ray imaging systems, sensor integration.
-    </p>
-</div>
+        <p class="project"><strong>Prosperkolleg (01.2020 - 03.2024)</strong><br>
+        Developed and applied advanced AI methods to automate recycling processes in real-world plants.</p>
+    </div>
 
-<div class="section">
-    <h2>Languages</h2>
-    <p class="languages">
-    Arabic: Native<br>
-    English: Very good<br>
-    German: Intermediate<br>
-    French: Beginner
-    </p>
+    <div id="publications" class="section">
+        <h2>Publications</h2>
+        <h3>Journal Papers</h3>
+        <p class="publication"><strong>2024:</strong> One size does not fit all in evaluating model selection scores for image classification. <em>Scientific Reports</em></p>
+        <p class="publication"><strong>2024:</strong> Parameter-Efficient Fine-Tuning of Large Pretrained Models for Instance Segmentation Tasks. <em>Machine Learning and Knowledge Extraction</em></p>
+        <!-- Add remaining publications in the same format -->
+
+        <h3>Conference Papers</h3>
+        <p class="publication"><strong>2025:</strong> Rethinking model selection beyond ImageNet accuracy for waste classification. <em>ICPRAM</em></p>
+        <!-- Add remaining conference papers -->
+
+        <h3>Book Chapters</h3>
+        <p class="publication"><strong>2022:</strong> KI-basierte Unterstützung beim automatisierten Elektroschrott-Recycling. <em>Digitalisierung zur Circular Economy</em></p>
+    </div>
+
+    <div id="skills" class="section">
+        <h2>Technical Skills & Languages</h2>
+        <p class="skills">
+        <strong>AI/Deep Learning:</strong> Multi-modal learning, foundation models, parameter-efficient finetuning.<br>
+        <strong>Programming:</strong> Python, MATLAB, Shell scripting.<br>
+        <strong>Frameworks & Libraries:</strong> PyTorch, Keras, Hugging Face Transformers, OpenCV.<br>
+        <strong>Data Analysis:</strong> Data pre-processing, feature engineering, statistical analysis.<br>
+        <strong>Hardware:</strong> GPU computing, X-ray imaging systems, sensor integration.
+        </p>
+        <p class="languages">
+        Arabic: Native<br>
+        English: Very good<br>
+        German: Intermediate<br>
+        French: Beginner
+        </p>
+    </div>
+
 </div>
 
 </body>
