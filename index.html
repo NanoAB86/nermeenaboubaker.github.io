@@ -6,32 +6,26 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 <style>
-/* Body & Fonts */
-body { font-family: 'Roboto', sans-serif; margin:0; padding:0; background:#f0f0f0; color:#222; }
+body { font-family: 'Roboto', sans-serif; margin:0; padding:0; background:#f0f0f0; color:#222; line-height:1.6; }
 a { color:#0073e6; text-decoration:none; }
 a:hover { text-decoration:underline; }
-
-/* Container */
-.container { max-width: 750px; margin:50px auto; padding:0 20px; }
-
-/* Header */
+.container { max-width: 800px; margin:50px auto; padding:0 20px; }
 header { text-align:center; margin-bottom:50px; }
-header h1 { font-size:2.5em; margin-bottom:5px; }
-header p { font-size:1.1em; color:#555; margin-bottom:10px; }
+header h1 { font-size:2.5em; margin-bottom:10px; }
+header p { font-size:1.1em; color:#555; margin-bottom:5px; }
 header a { margin:0 8px; color:#0073e6; }
-
-/* Section */
 section { margin-bottom:50px; }
 section h2 { font-size:1.8em; border-bottom:2px solid #ccc; padding-bottom:5px; margin-bottom:25px; }
 
-/* Cards */
+/* Card style */
 .card { background:white; padding:20px; margin-bottom:20px; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.05); }
 .card:hover { box-shadow:0 4px 12px rgba(0,0,0,0.1); }
-.card a { font-weight:500; }
+.card .meta { font-size:0.9em; color:#555; margin-bottom:8px; }
+.card a { font-weight:500; display:inline-block; margin-top:5px; }
 
-/* Publication / Project metadata */
-.card .year { font-weight:bold; color:#555; margin-right:8px; }
-.card em { font-style:normal; color:#777; }
+/* Research interests */
+.interests { display:flex; flex-wrap:wrap; justify-content:center; margin-top:15px; }
+.interests span { background:#0073e6; color:white; padding:5px 12px; border-radius:15px; margin:5px; font-size:0.9em; }
 </style>
 </head>
 <body>
@@ -45,53 +39,50 @@ section h2 { font-size:1.8em; border-bottom:2px solid #ccc; padding-bottom:5px; 
         <a href="https://github.com/nanoab86" target="_blank">GitHub</a> |
         <a href="https://www.linkedin.com/in/nermeenaboubaker" target="_blank">LinkedIn</a>
     </p>
+    <div class="interests">
+        <span>Computer Vision</span>
+        <span>Transfer Learning</span>
+        <span>Multi-modal AI</span>
+        <span>Sustainable AI</span>
+        <span>Foundation Models</span>
+    </div>
 </header>
 
 <section id="publications">
     <h2>Publications</h2>
-
     <div class="card">
-        <span class="year">2024</span>
+        <div class="meta">2024 - Scientific Reports</div>
         One size does not fit all in evaluating model selection scores for image classification.<br>
-        <em>Scientific Reports</em><br>
         <a href="link-to-pdf.pdf" target="_blank">[PDF]</a>
     </div>
-
     <div class="card">
-        <span class="year">2024</span>
+        <div class="meta">2024 - Machine Learning and Knowledge Extraction</div>
         Parameter-Efficient Fine-Tuning of Large Pretrained Models for Instance Segmentation Tasks.<br>
-        <em>Machine Learning and Knowledge Extraction</em><br>
         <a href="link-to-pdf.pdf" target="_blank">[PDF]</a>
     </div>
-
     <div class="card">
-        <span class="year">2021</span>
+        <div class="meta">2021 - EAI Endorsed Transactions on Smart Cities</div>
         Transfer learning-based method for automated e-waste recycling in smart cities.<br>
-        <em>EAI Endorsed Transactions on Smart Cities</em><br>
         <a href="link-to-pdf.pdf" target="_blank">[PDF]</a>
     </div>
-
-    <!-- Add all remaining publications in the same format -->
-
+    <!-- Add more publications -->
 </section>
 
 <section id="projects">
     <h2>Projects</h2>
-
     <div class="card">
-        <strong>Transfer Hub (2025 - Present)</strong><br>
+        <div class="meta">2025 - Present</div>
+        <strong>Transfer Hub</strong><br>
         Developing AI solutions for data analysis, automation, and digital product passports for sustainability.<br>
         <a href="https://github.com/your-repo" target="_blank">[Project link]</a>
     </div>
-
     <div class="card">
-        <strong>Digital Zirkulär Ruhr (2024 - 2025)</strong><br>
+        <div class="meta">2024 - 2025</div>
+        <strong>Digital Zirkulär Ruhr</strong><br>
         Applying AI for automation and resource efficiency to help SMEs adopt data-driven circular economy models.<br>
         <a href="https://github.com/your-repo" target="_blank">[Project link]</a>
     </div>
-
-    <!-- Add all remaining projects in the same format -->
-
+    <!-- Add more projects -->
 </section>
 </div>
 
