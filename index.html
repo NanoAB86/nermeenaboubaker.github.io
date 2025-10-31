@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nermeen Abou Baker | AI Researcher</title>
+    <title>Nermeen Abou Baker</title>
     <style>
         * {
             margin: 0;
@@ -12,491 +12,455 @@
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.8;
-            color: #24292e;
-            background-color: #ffffff;
-            max-width: 900px;
+            font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1000px;
             margin: 0 auto;
-            padding: 80px 40px;
+            padding: 60px 30px;
+            background-color: #ffffff;
+            box-shadow: 0 0 20px rgba(0,0,0,0.05);
         }
 
-        /* Header Section */
+        /* Header */
         header {
-            text-align: center;
-            margin-bottom: 60px;
-            padding-bottom: 40px;
-        }
-
-        .profile-photo {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            margin: 0 auto 30px;
-            display: block;
-            border: 4px solid #f0f0f0;
-            object-fit: cover;
+            margin-bottom: 50px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #e8e8e8;
         }
 
         h1 {
-            font-size: 2.5em;
-            font-weight: 600;
-            margin-bottom: 15px;
-            color: #1a1a1a;
-            letter-spacing: -0.5px;
+            font-size: 2.2em;
+            font-weight: 400;
+            margin-bottom: 8px;
+            color: #2c3e50;
         }
 
-        .title {
-            font-size: 1.1em;
-            color: #586069;
-            margin-bottom: 25px;
-            font-weight: 400;
+        .subtitle {
+            font-size: 1.15em;
+            color: #7f8c8d;
+            font-weight: 300;
+            margin-bottom: 20px;
         }
 
         .bio {
-            max-width: 700px;
-            margin: 0 auto 30px;
-            color: #586069;
-            font-size: 1.05em;
-            line-height: 1.7;
+            font-size: 1em;
+            color: #555;
+            line-height: 1.8;
+            max-width: 800px;
+            margin-bottom: 20px;
         }
 
         .interests {
-            margin: 25px auto;
-            color: #24292e;
             font-size: 0.95em;
-            max-width: 700px;
+            color: #555;
+            line-height: 1.8;
         }
 
         .interests strong {
             font-weight: 600;
+            color: #2c3e50;
         }
 
         .social-links {
-            margin-top: 25px;
+            margin-top: 20px;
+            display: flex;
+            gap: 15px;
+            align-items: center;
         }
 
         .social-links a {
-            color: #0366d6;
-            text-decoration: none;
-            margin: 0 12px;
-            font-size: 1em;
-            font-weight: 500;
+            display: inline-block;
+            transition: opacity 0.2s;
         }
 
         .social-links a:hover {
-            text-decoration: underline;
+            opacity: 0.7;
         }
 
-        /* Section Styles */
-        section {
-            margin-bottom: 60px;
+        .social-links img {
+            width: 32px;
+            height: 32px;
+            display: block;
         }
 
+        /* Section Headers */
         h2 {
-            font-size: 2em;
-            font-weight: 600;
-            margin-bottom: 35px;
-            color: #1a1a1a;
-            letter-spacing: -0.3px;
+            font-size: 1.8em;
+            font-weight: 400;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            margin-top: 50px;
         }
 
-        /* Publication Items */
-        .publication-item {
-            margin-bottom: 40px;
-            padding-bottom: 35px;
-            border-bottom: 1px solid #e1e4e8;
+        /* Publication Cards */
+        .publication-card {
             display: flex;
-            gap: 25px;
-            align-items: flex-start;
+            gap: 30px;
+            margin-bottom: 40px;
+            padding-bottom: 40px;
+            border-bottom: 1px solid #e8e8e8;
         }
 
-        .publication-item:last-child {
+        .publication-card:last-child {
             border-bottom: none;
         }
 
-        .publication-image {
+        .pub-image {
             flex-shrink: 0;
-            width: 320px;
-            height: 213px;
-            object-fit: cover;
-            border-radius: 6px;
-            border: 1px solid #e1e4e8;
+            width: 280px;
+            height: auto;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
 
-        .publication-content {
+        .pub-content {
             flex: 1;
         }
 
-        .publication-item h3 {
-            font-size: 1.2em;
+        .pub-title {
+            font-size: 1.1em;
             font-weight: 600;
-            margin-bottom: 10px;
-            color: #0366d6;
-            line-height: 1.5;
-        }
-
-        .publication-item h3:hover {
-            text-decoration: underline;
-            cursor: pointer;
-        }
-
-        .publication-venue {
-            color: #24292e;
-            font-size: 1em;
+            color: #2c3e50;
             margin-bottom: 8px;
-            font-weight: 500;
+            line-height: 1.4;
         }
 
-        .publication-year {
-            color: #586069;
+        .pub-venue {
             font-size: 0.95em;
+            color: #7f8c8d;
+            margin-bottom: 5px;
+            font-style: italic;
         }
 
-        .publication-authors {
-            color: #586069;
+        .pub-authors {
             font-size: 0.9em;
-            margin-top: 5px;
+            color: #95a5a6;
+            margin-bottom: 12px;
         }
 
-        .publication-links {
-            margin-top: 12px;
+        .pub-links {
             display: flex;
             gap: 10px;
             flex-wrap: wrap;
         }
 
-        .publication-item a {
-            color: #ffffff;
-            background-color: #0366d6;
-            text-decoration: none;
-            font-weight: 500;
-            padding: 6px 16px;
-            border-radius: 6px;
-            font-size: 0.9em;
+        .pub-links a {
             display: inline-block;
-            transition: background-color 0.3s ease;
-        }
-
-        .publication-item a:hover {
-            background-color: #0256c5;
+            padding: 5px 14px;
+            background-color: #3498db;
+            color: white;
             text-decoration: none;
+            border-radius: 3px;
+            font-size: 0.85em;
+            font-weight: 500;
+            transition: background-color 0.2s;
         }
 
-        .publication-item a.code-link {
-            background-color: #28a745;
+        .pub-links a:hover {
+            background-color: #2980b9;
         }
 
-        .publication-item a.code-link:hover {
-            background-color: #218838;
+        .pub-links a.code {
+            background-color: #27ae60;
         }
 
-        /* Project Items */
-        .project-item {
-            margin-bottom: 40px;
-            padding: 25px;
-            background-color: #f6f8fa;
-            border-radius: 6px;
-            border-left: 3px solid #0366d6;
+        .pub-links a.code:hover {
+            background-color: #229954;
+        }
+
+        /* Project Cards */
+        .project-card {
             display: flex;
             gap: 25px;
             align-items: flex-start;
+            margin-bottom: 35px;
+            padding: 25px;
+            background-color: #f8f9fa;
+            border-radius: 4px;
+            border-left: 4px solid #3498db;
         }
 
         .project-logo {
             flex-shrink: 0;
-            width: 120px;
-            height: 120px;
+            width: 100px;
+            height: 100px;
             object-fit: contain;
-            border-radius: 6px;
-            background-color: #ffffff;
-            padding: 10px;
-            border: 1px solid #e1e4e8;
+            background-color: white;
+            padding: 8px;
+            border-radius: 4px;
         }
 
         .project-content {
             flex: 1;
         }
 
-        .project-item h3 {
-            font-size: 1.3em;
+        .project-title {
+            font-size: 1.2em;
             font-weight: 600;
-            margin-bottom: 10px;
-            color: #1a1a1a;
+            color: #2c3e50;
+            margin-bottom: 8px;
         }
 
         .project-period {
-            color: #0366d6;
-            font-size: 0.95em;
-            margin-bottom: 12px;
+            font-size: 0.9em;
+            color: #3498db;
+            margin-bottom: 10px;
             font-weight: 500;
         }
 
         .project-description {
-            color: #586069;
-            line-height: 1.7;
-            margin-bottom: 15px;
-            font-size: 1em;
+            font-size: 0.95em;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 12px;
         }
 
-        .project-item a {
-            color: #ffffff;
-            background-color: #0366d6;
-            text-decoration: none;
-            font-weight: 500;
-            padding: 6px 16px;
-            border-radius: 6px;
-            font-size: 0.9em;
+        .project-link {
             display: inline-block;
-            transition: background-color 0.3s ease;
+            padding: 5px 14px;
+            background-color: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 3px;
+            font-size: 0.85em;
+            font-weight: 500;
+            transition: background-color 0.2s;
         }
 
-        .project-item a:hover {
-            background-color: #0256c5;
-            text-decoration: none;
+        .project-link:hover {
+            background-color: #2980b9;
         }
 
         /* Footer */
         footer {
-            text-align: center;
-            margin-top: 80px;
+            margin-top: 60px;
             padding-top: 30px;
-            border-top: 1px solid #e1e4e8;
-            color: #586069;
+            border-top: 2px solid #e8e8e8;
+            text-align: center;
+            color: #95a5a6;
             font-size: 0.9em;
         }
 
         /* Responsive Design */
         @media (max-width: 768px) {
-            body {
-                padding: 50px 20px;
+            .container {
+                padding: 40px 20px;
             }
 
             h1 {
-                font-size: 2em;
+                font-size: 1.8em;
             }
 
             h2 {
-                font-size: 1.6em;
+                font-size: 1.5em;
             }
 
-            .profile-photo {
-                width: 150px;
-                height: 150px;
-            }
-
-            .social-links a {
-                display: inline-block;
-                margin: 5px 8px;
-            }
-
-            .publication-item {
+            .publication-card {
                 flex-direction: column;
             }
 
-            .publication-image {
+            .pub-image {
                 width: 100%;
-                height: 200px;
+                max-width: 400px;
             }
 
-            .project-item {
+            .project-card {
                 flex-direction: column;
+                align-items: center;
+                text-align: center;
             }
 
             .project-logo {
-                width: 100px;
-                height: 100px;
-                margin: 0 auto;
+                margin-bottom: 15px;
             }
         }
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <!-- Optional: Add your profile photo -->
-        <!-- <img src="profile.jpg" alt="Nermeen Abou Baker" class="profile-photo"> -->
-        
-        <h1>Nermeen Abou Baker</h1>
-        <p class="title">AI Researcher</p>
-        
-        <div class="bio">
-            <p>I am an AI researcher specializing in sustainable computer vision and multi-modal AI systems. My work focuses on developing efficient AI solutions for sustainability and circular economy applications.</p>
-        </div>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Nermeen Abou Baker</h1>
+            <p class="subtitle">AI Researcher</p>
+            
+            <p class="bio">
+                I am an AI researcher specializing in sustainable computer vision and multi-modal AI systems. 
+                My work focuses on developing efficient AI solutions for sustainability and circular economy applications.
+            </p>
 
-        <div class="interests">
-            <p><strong>Interests:</strong> Computer Vision, Multi-modal AI, Sustainable AI, Model Selection, Instance Segmentation, Transfer Learning, Deep Learning</p>
-        </div>
+            <p class="interests">
+                <strong>Interests:</strong> Computer Vision, Multi-modal AI, Sustainable AI, Model Selection, Instance Segmentation, Transfer Learning, Deep Learning
+            </p>
 
-        <div class="social-links">
-            <a href="https://scholar.google.com/citations?user=3KL3QSsAAAAJ&hl=en" target="_blank">Google Scholar</a>
-            <a href="https://github.com/NanoAB86" target="_blank">GitHub</a>
-            <a href="https://www.linkedin.com/in/nermeen-abou-baker-phd-95011191/" target="_blank">LinkedIn</a>
-        </div>
-    </header>
+            <div class="social-links">
+                <a href="https://scholar.google.com/citations?user=3KL3QSsAAAAJ&hl=en" target="_blank" title="Google Scholar">
+                    <img src="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/svg/google-scholar.svg" alt="Google Scholar">
+                </a>
+                <a href="https://github.com/NanoAB86" target="_blank" title="GitHub">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/nermeen-abou-baker-phd-95011191/" target="_blank" title="LinkedIn">
+                    <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn">
+                </a>
+            </div>
+        </header>
 
-    <!-- Selected Publications Section -->
-    <section id="publications">
-        <h2>Selected Publications</h2>
+        <!-- Selected Publications -->
+        <section>
+            <h2>Selected Publications</h2>
 
-        <div class="publication-item">
-            <img src="images/Rethinking.png" alt="Publication image" class="publication-image">
-            <div class="publication-content">
-                <h3>Rethinking Model Selection Beyond ImageNet Accuracy for Waste Classification</h3>
-                <p class="publication-venue">The 14th International Conference on Pattern Recognition Applications and Methods (ICPRAM)</p>
-                <span class="publication-year">2025</span>
-                <p class="publication-authors">Nermeen Abou Baker, Uwe Handmann</p>
-                <div class="publication-links">
-                    <a href="https://www.scitepress.org/PublicationsDetail.aspx?ID=UFLaMWAQPmU=&t=1" target="_blank">Paper</a>
+            <div class="publication-card">
+                <img src="images/Rethinking.png" alt="Publication" class="pub-image">
+                <div class="pub-content">
+                    <div class="pub-title">Rethinking Model Selection Beyond ImageNet Accuracy for Waste Classification</div>
+                    <div class="pub-venue">The 14th International Conference on Pattern Recognition Applications and Methods (ICPRAM), 2025</div>
+                    <div class="pub-authors">Nermeen Abou Baker, Uwe Handmann</div>
+                    <div class="pub-links">
+                        <a href="https://www.scitepress.org/PublicationsDetail.aspx?ID=UFLaMWAQPmU=&t=1" target="_blank">Paper</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="publication-item">
-            <img src="images/categoriesScore.png" alt="Publication image" class="publication-image">
-            <div class="publication-content">
-                <h3>One size does not fit all in evaluating model selection scores for image classification</h3>
-                <p class="publication-venue">Scientific Reports 14 (1)</p>
-                <span class="publication-year">2024</span>
-                <p class="publication-authors">Nermeen Abou Baker, Uwe Handmann</p>
-                <div class="publication-links">
-                    <a href="https://www.nature.com/articles/s41598-024-81752-w" target="_blank">Paper</a>
-                    <a href="https://github.com/NanoAB86/ModelSelection_Benchmark" class="code-link" target="_blank">Code</a>
+            <div class="publication-card">
+                <img src="images/categoriesScore.png" alt="Publication" class="pub-image">
+                <div class="pub-content">
+                    <div class="pub-title">One size does not fit all in evaluating model selection scores for image classification</div>
+                    <div class="pub-venue">Scientific Reports 14 (1), 2024</div>
+                    <div class="pub-authors">Nermeen Abou Baker, Uwe Handmann</div>
+                    <div class="pub-links">
+                        <a href="https://www.nature.com/articles/s41598-024-81752-w" target="_blank">Paper</a>
+                        <a href="https://github.com/NanoAB86/ModelSelection_Benchmark" class="code" target="_blank">Code</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="publication-item">
-            <img src="images/example-preds-1.png" alt="Publication image" class="publication-image">
-            <div class="publication-content">
-                <h3>Parameter-Efficient Fine-Tuning of Large Pretrained Models for Instance Segmentation Tasks</h3>
-                <p class="publication-venue">Machine Learning and Knowledge Extraction</p>
-                <span class="publication-year">2024</span>
-                <p class="publication-authors">Nermeen Abou Baker, David Rohrschneider, Uwe Handmann</p>
-                <div class="publication-links">
-                    <a href="https://www.mdpi.com/2504-4990/6/4/133" target="_blank">Paper</a>
-                    <a href="https://github.com/david-rohrschneider/SEEM-Adapter" class="code-link" target="_blank">Code of SEEM PEFT</a>
-                    <a href="https://github.com/david-rohrschneider/MaskDINO-Adapter" class="code-link" target="_blank">Code of MaskDINO PEFT</a>
+            <div class="publication-card">
+                <img src="images/example-preds-1.png" alt="Publication" class="pub-image">
+                <div class="pub-content">
+                    <div class="pub-title">Parameter-Efficient Fine-Tuning of Large Pretrained Models for Instance Segmentation Tasks</div>
+                    <div class="pub-venue">Machine Learning and Knowledge Extraction, 2024</div>
+                    <div class="pub-authors">Nermeen Abou Baker, David Rohrschneider, Uwe Handmann</div>
+                    <div class="pub-links">
+                        <a href="https://www.mdpi.com/2504-4990/6/4/133" target="_blank">Paper</a>
+                        <a href="https://github.com/david-rohrschneider/SEEM-Adapter" class="code" target="_blank">SEEM Code</a>
+                        <a href="https://github.com/david-rohrschneider/MaskDINO-Adapter" class="code" target="_blank">MaskDINO Code</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-
-
-        <div class="publication-item">
-            <img src="images/figure-1.png" alt="Publication image" class="publication-image">
-            <div class="publication-content">
-                <h3>Don't waste SAM</h3>
-                <p class="publication-venue">31st European Symposium on Artificial Neural Networks (ESANN 2023)</p>
-                <span class="publication-year">2023</span>
-                <p class="publication-authors">Nermeen Abou Baker, Uwe Handmann</p>
-                <div class="publication-links">
-                    <a href="https://www.researchgate.net/profile/Nermeen-Abou-Baker-3/publication/373998633_Don't_waste_SAM_Finetuning_Segment_Anything_Model_for_waste_sorting/links/66577055479366623a209a8a/Dont-waste-SAM-Finetuning-Segment-Anything-Model-for-waste-sorting.pdf" target="_blank">Paper</a>
+            <div class="publication-card">
+                <img src="images/figure-1.png" alt="Publication" class="pub-image">
+                <div class="pub-content">
+                    <div class="pub-title">Don't waste SAM</div>
+                    <div class="pub-venue">31st European Symposium on Artificial Neural Networks (ESANN), 2023</div>
+                    <div class="pub-authors">Nermeen Abou Baker, Uwe Handmann</div>
+                    <div class="pub-links">
+                        <a href="https://www.researchgate.net/profile/Nermeen-Abou-Baker-3/publication/373998633_Don't_waste_SAM_Finetuning_Segment_Anything_Model_for_waste_sorting/links/66577055479366623a209a8a/Dont-waste-SAM-Finetuning-Segment-Anything-Model-for-waste-sorting.pdf" target="_blank">Paper</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="publication-item">
-            <img src="images/lib_instances.png" alt="Publication image" class="publication-image">
-            <div class="publication-content">
-                <h3>Double Transfer Learning to detect Lithium-Ion batteries on X-Ray images</h3>
-                <p class="publication-venue">17th International Work-Conference on Artificial Neural Networks (IWANN 2023)</p>
-                <span class="publication-year">2023</span>
-                <p class="publication-authors">David Rohrschneider, Nermeen Abou Baker, Uwe Handmann</p>
-                <div class="publication-links">
-                    <a href="https://link.springer.com/chapter/10.1007/978-3-031-43085-5_14" target="_blank">Paper</a>
+            <div class="publication-card">
+                <img src="images/lib_instances.png" alt="Publication" class="pub-image">
+                <div class="pub-content">
+                    <div class="pub-title">Double Transfer Learning to detect Lithium-Ion batteries on X-Ray images</div>
+                    <div class="pub-venue">17th International Work-Conference on Artificial Neural Networks (IWANN), 2023</div>
+                    <div class="pub-authors">David Rohrschneider, Nermeen Abou Baker, Uwe Handmann</div>
+                    <div class="pub-links">
+                        <a href="https://link.springer.com/chapter/10.1007/978-3-031-43085-5_14" target="_blank">Paper</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="publication-item">
-            <img src="images/classifier.png" alt="Publication image" class="publication-image">
-            <div class="publication-content">
-                <h3>Transfer Learning Approach Towards a Smarter Recycling</h3>
-                <p class="publication-venue">31st International Conference on Artificial Neural Networks (ICANN)</p>
-                <span class="publication-year">2022</span>
-                <p class="publication-authors">Nermeen Abou Baker, Jonas Stehr, Uwe Handmann</p>
-                <div class="publication-links">
-                    <a href="https://link.springer.com/chapter/10.1007/978-3-031-15919-0_57" target="_blank">Paper</a>
-                    <a href="https://github.com/NanoAB86/HandcraftedClassifier" class="code-link" target="_blank">Code</a>
+            <div class="publication-card">
+                <img src="images/classifier.png" alt="Publication" class="pub-image">
+                <div class="pub-content">
+                    <div class="pub-title">Transfer Learning Approach Towards a Smarter Recycling</div>
+                    <div class="pub-venue">31st International Conference on Artificial Neural Networks (ICANN), 2022</div>
+                    <div class="pub-authors">Nermeen Abou Baker, Jonas Stehr, Uwe Handmann</div>
+                    <div class="pub-links">
+                        <a href="https://link.springer.com/chapter/10.1007/978-3-031-15919-0_57" target="_blank">Paper</a>
+                        <a href="https://github.com/NanoAB86/HandcraftedClassifier" class="code" target="_blank">Code</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
- 
-
-        <div class="publication-item">
-            <img src="images/InfoHd5-1.png" alt="Publication image" class="publication-image">
-            <div class="publication-content">
-                <h3>A Transfer Learning Evaluation of Deep Neural Networks for Image Classification</h3>
-                <p class="publication-venue">Machine Learning and Knowledge Extraction </p>
-                <span class="publication-year">2022</span>
-                <p class="publication-authors">Nermeen Abou Baker, Nico Zengeler, Uwe Handmann</p>
-                <div class="publication-links">
-                    <a href="https://www.mdpi.com/2504-4990/4/1/2" target="_blank">Paper</a>
+            <div class="publication-card">
+                <img src="images/InfoHd5-1.png" alt="Publication" class="pub-image">
+                <div class="pub-content">
+                    <div class="pub-title">A Transfer Learning Evaluation of Deep Neural Networks for Image Classification</div>
+                    <div class="pub-venue">Machine Learning and Knowledge Extraction, 2022</div>
+                    <div class="pub-authors">Nermeen Abou Baker, Nico Zengeler, Uwe Handmann</div>
+                    <div class="pub-links">
+                        <a href="https://www.mdpi.com/2504-4990/4/1/2" target="_blank">Paper</a>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="publication-item">
-            <img src="images/GAF.png" alt="Publication image" class="publication-image">
-            <div class="publication-content">
-                <h3>Battery detection of XRay images using transfer learning</h3>
-                <p class="publication-venue">European Symposium on Artificial Neural Networks (ESANN), Bruges, Belgium</p>
-                <span class="publication-year">2022</span>
-                <p class="publication-authors">Nermeen Abou Baker, David Rohrschneider, Uwe Handmann</p>
-                <div class="publication-links">
-                    <a href="https://www.esann.org/sites/default/files/proceedings/2022/ES2022-60.pdf" target="_blank">Paper</a>
+            <div class="publication-card">
+                <img src="images/GAF.png" alt="Publication" class="pub-image">
+                <div class="pub-content">
+                    <div class="pub-title">Battery detection of XRay images using transfer learning</div>
+                    <div class="pub-venue">European Symposium on Artificial Neural Networks (ESANN), 2022</div>
+                    <div class="pub-authors">Nermeen Abou Baker, David Rohrschneider, Uwe Handmann</div>
+                    <div class="pub-links">
+                        <a href="https://www.esann.org/sites/default/files/proceedings/2022/ES2022-60.pdf" target="_blank">Paper</a>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
 
+        <!-- Projects -->
+        <section>
+            <h2>Projects</h2>
 
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects">
-        <h2>Projects</h2>
-
-  <div class="project-item">
-            <img src="images/Transferhub-Logo-768x186.png" alt="Transfer Hub Logo" class="project-logo">
-            <div class="project-content">
-                <h3>Transfer Hub</h3>
-                <p class="project-period">2025 - Present</p>
-                <p class="project-description">Developing AI solutions for data analysis, automation, and digital product passports for sustainability.</p>
-                <a href="https://www.transferhub.nrw/" target="_blank" target="_blank">View Project</a>
+            <div class="project-card">
+                <img src="images/Transferhub-Logo-768x186.png" alt="Transfer Hub" class="project-logo">
+                <div class="project-content">
+                    <div class="project-title">Transfer Hub</div>
+                    <div class="project-period">2025 - Present</div>
+                    <p class="project-description">
+                        Developing AI solutions for data analysis, automation, and digital product passports for sustainability.
+                    </p>
+                    <a href="https://www.transferhub.nrw/" class="project-link" target="_blank">View Project</a>
+                </div>
             </div>
-        </div>
 
-
-<div class="project-item">
-            <img src="images/LogoTransperent-3.png" alt="Transfer Hub Logo" class="project-logo">
-            <div class="project-content">
-                <h3>Digital Zirkulär Ruhr</h3>
-                <p class="project-period">2023 - 2025</p>
-                <p class="project-description">Applying AI for automation and resource efficiency to help SMEs adopt data-driven circular economy models.</p>
-                <a href="https://www.linkedin.com/company/digital-zirkul%C3%A4r-ruhr/posts/?feedView=all" target="_blank" target="_blank">View Project</a>
+            <div class="project-card">
+                <img src="images/LogoTransperent-3.png" alt="Digital Zirkulär Ruhr" class="project-logo">
+                <div class="project-content">
+                    <div class="project-title">Digital Zirkulär Ruhr</div>
+                    <div class="project-period">2023 - 2025</div>
+                    <p class="project-description">
+                        Applying AI for automation and resource efficiency to help SMEs adopt data-driven circular economy models.
+                    </p>
+                    <a href="https://www.linkedin.com/company/digital-zirkul%C3%A4r-ruhr/posts/?feedView=all" class="project-link" target="_blank">View Project</a>
+                </div>
             </div>
-        </div>
 
-
-
-        <div class="project-item">
-            <img src="images/pk.jpg" alt="Transfer Hub Logo" class="project-logo">
-            <div class="project-content">
-                <h3>Prosperkolleg</h3>
-                <p class="project-period">2020 - 2023</p>
-                <p class="project-description">Applying AI for support smarter recycling of e-waste devices.</p>
-                <a href="https://www.prosperkolleg.de/" target="_blank" target="_blank">View Project</a>
+            <div class="project-card">
+                <img src="images/pk.jpg" alt="Prosperkolleg" class="project-logo">
+                <div class="project-content">
+                    <div class="project-title">Prosperkolleg</div>
+                    <div class="project-period">2020 - 2023</div>
+                    <p class="project-description">
+                        Applying AI for support smarter recycling of e-waste devices.
+                    </p>
+                    <a href="https://www.prosperkolleg.de/" class="project-link" target="_blank">View Project</a>
+                </div>
             </div>
-        </div>
-        
-         
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Nermeen Abou Baker</p>
-    </footer>
+        <!-- Footer -->
+        <footer>
+            <p>© 2025 Nermeen Abou Baker</p>
+        </footer>
+    </div>
 </body>
 </html>
