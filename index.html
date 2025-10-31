@@ -2,112 +2,60 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Nermeen Abou Baker</title>
+<title>Nermeen Abou Baker - AI Researcher</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 <style>
-/* Reset and fonts */
-body, html { margin: 0; padding: 0; font-family: 'Roboto', sans-serif; color: #222; }
-a { color: #0073e6; text-decoration: none; }
-a:hover { text-decoration: underline; }
-
-/* Layout */
-.container { display: flex; min-height: 100vh; }
-.sidebar {
-    width: 260px;
-    background-color: #f5f5f5;
-    padding: 30px 20px;
-    flex-shrink: 0;
-    position: sticky;
-    top: 0;
-    height: 100vh;
-}
-.main { flex-grow: 1; padding: 40px; max-width: 900px; }
-
-/* Sidebar content */
-.sidebar h1 { font-size: 1.8em; margin-bottom: 10px; }
-.sidebar img { border-radius: 50%; width: 150px; display: block; margin-bottom: 20px; }
-.sidebar p { margin: 8px 0; }
-.sidebar nav a { display: block; margin: 12px 0; }
-
-/* Sections */
-section { margin-bottom: 40px; }
-section h2 { font-size: 1.5em; border-bottom: 2px solid #ccc; padding-bottom: 5px; margin-bottom: 15px; color: #333; }
-.project, .publication { margin-bottom: 12px; }
-
-/* Responsive */
-@media screen and (max-width: 800px) {
-    .container { flex-direction: column; }
-    .sidebar { width: 100%; height: auto; position: relative; padding: 20px; }
-    .main { padding: 20px; }
-}
+body { font-family: 'Roboto', sans-serif; margin:0; padding:0; background:#f9f9f9; color:#222; }
+header { background:#2c3e50; color:white; padding:40px 20px; text-align:center; }
+header h1 { margin:0; font-size:2.2em; }
+header p { margin:5px 0 0; font-size:1.1em; }
+main { max-width:900px; margin:40px auto; padding:0 20px; }
+h2 { border-bottom:2px solid #ccc; padding-bottom:5px; margin-bottom:20px; color:#333; }
+.publication, .project { margin-bottom:20px; }
+.publication a, .project a { color:#0073e6; text-decoration:none; }
+.publication a:hover, .project a:hover { text-decoration:underline; }
 </style>
 </head>
 <body>
 
-<div class="container">
+<header>
+    <h1>Nermeen Abou Baker</h1>
+    <p>AI Researcher | Sustainable Computer Vision & Multi-modal AI</p>
+</header>
 
-    <aside class="sidebar">
-        <img src="photo.jpg" alt="Nermeen Abou Baker">
-        <h1>Nermeen Abou Baker</h1>
-        <p>Bottrop, Germany</p>
-        <p><a href="mailto:Nermeen86@gmail.com">Nermeen86@gmail.com</a></p>
-        <p><a href="https://scholar.google.de/citations?user=3KL3QSsAAAAJ&hl=de&oi=ao" target="_blank">Google Scholar</a></p>
-        <nav>
-            <a href="#statement">Statement</a>
-            <a href="#education">Education</a>
-            <a href="#research">Research</a>
-            <a href="#projects">Projects</a>
-            <a href="#publications">Publications</a>
-            <a href="#skills">Skills & Languages</a>
-        </nav>
-    </aside>
+<main>
 
-    <main class="main">
-        <section id="statement">
-            <h2>Personal Statement</h2>
-            <p>I am an AI researcher specializing in efficient computer vision models for sustainable AI. My work focuses on transfer learning and state-of-the-art finetuning methods to reduce data and compute requirements. I develop multi-modal AI and improve model selection beyond traditional benchmarks. My applied research includes AI for sustainability and X-ray image analysis. Currently, I am optimizing foundation models for high-precision, low-energy industrial applications.</p>
-        </section>
+<section id="publications">
+    <h2>Publications</h2>
+    <div class="publication">
+        <strong>2024:</strong> One size does not fit all in evaluating model selection scores for image classification.<br>
+        <em>Scientific Reports</em>.<br>
+        <a href="link-to-paper.pdf" target="_blank">[PDF]</a>
+    </div>
+    <div class="publication">
+        <strong>2024:</strong> Parameter-Efficient Fine-Tuning of Large Pretrained Models for Instance Segmentation Tasks.<br>
+        <em>Machine Learning and Knowledge Extraction</em>.<br>
+        <a href="link-to-paper.pdf" target="_blank">[PDF]</a>
+    </div>
+    <!-- Add remaining publications here -->
+</section>
 
-        <section id="education">
-            <h2>Education</h2>
-            <p><strong>PhD student (03.2020 - Present)</strong> - Ruhr Universität Bochum, Germany. Thesis: Advancement of recycling systems through multi-modal transfer learning. Supervisors: Prof. Dr. Tobias Glasmachers, Prof. Dr. Uwe Handmann.</p>
-            <p><strong>M.Sc. in Computer Security (12.2013 - 11.2016)</strong> - University of Liverpool, UK. Thesis: Smartphone forensics analysis of social networking.</p>
-            <p><strong>Bachelor in Telecommunication Engineering (09.2003 - 11.2008)</strong> - HIAST, Syria. Thesis: Design and implementation of an ultra-wideband VHF/UHF power amplifier using transmission line transformer.</p>
-        </section>
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="project">
+        <strong>Transfer Hub (2025 - Present)</strong><br>
+        Developing AI solutions for data analysis, automation, and digital product passports for resource efficiency and sustainability.<br>
+        <a href="https://github.com/your-repo" target="_blank">[Project link]</a>
+    </div>
+    <div class="project">
+        <strong>Digital Zirkulär Ruhr (2024 - 2025)</strong><br>
+        Applying AI for automation and resource efficiency to help SMEs adopt data-driven circular economy models.<br>
+        <a href="https://github.com/your-repo" target="_blank">[Project link]</a>
+    </div>
+    <!-- Add remaining projects here -->
+</section>
 
-        <section id="research">
-            <h2>Research Experience</h2>
-            <p><strong>Research assistant (01.2020 - Present)</strong> - Hochschule Ruhr West, Bottrop, Germany. AI research focusing on computer vision, transfer learning for automated waste sorting, and X-ray-based detection of electronic components.</p>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <p class="project"><strong>Transfer Hub (01.2025 - Present)</strong> - Developing AI solutions for data analysis, automation, and digital product passports for resource efficiency and sustainability.</p>
-            <p class="project"><strong>Digital Zirkulär Ruhr (04.2024 - 01.2025)</strong> - Applying AI for automation and resource efficiency to help SMEs adopt data-driven circular economy models.</p>
-            <p class="project"><strong>Prosperkolleg (01.2020 - 03.2024)</strong> - Developed and applied advanced AI methods to automate recycling processes in real-world plants.</p>
-        </section>
-
-        <section id="publications">
-            <h2>Publications</h2>
-            <p class="publication"><strong>2024:</strong> One size does not fit all in evaluating model selection scores for image classification. <em>Scientific Reports</em></p>
-            <p class="publication"><strong>2024:</strong> Parameter-Efficient Fine-Tuning of Large Pretrained Models for Instance Segmentation Tasks. <em>Machine Learning and Knowledge Extraction</em></p>
-            <!-- Add all remaining publications similarly -->
-        </section>
-
-        <section id="skills">
-            <h2>Skills & Languages</h2>
-            <p><strong>AI/Deep Learning:</strong> Multi-modal learning, foundation models, parameter-efficient finetuning.<br>
-            <strong>Programming:</strong> Python, MATLAB, Shell scripting.<br>
-            <strong>Frameworks & Libraries:</strong> PyTorch, Keras, Hugging Face Transformers, OpenCV.<br>
-            <strong>Data Analysis:</strong> Data pre-processing, feature engineering, statistical analysis.<br>
-            <strong>Hardware:</strong> GPU computing, X-ray imaging systems, sensor integration.<br>
-            <strong>Languages:</strong> Arabic (Native), English (Very good), German (Intermediate), French (Beginner)</p>
-        </section>
-
-    </main>
-</div>
-
+</main>
 </body>
 </html>
-
