@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Nermeen Abou Baker — homepage</title>
+  <style>
+    :root{--accent:#0b74de;--bg:#f8fbff;--card:#ffffff;--muted:#556}
+    body{font-family:Inter,system-ui,Arial;line-height:1.45;margin:0;background:var(--bg);color:var(--muted)}
+    .container{max-width:880px;margin:40px auto;padding:20px}
+    header{display:flex;gap:18px;align-items:center}
+    .avatar{width:88px;height:88px;border-radius:12px;background:#ddd;flex:0 0 88px}
+    h1{margin:.1rem 0;font-size:1.6rem}
+    .tagline{color:#354; margin:0 0 12px 0}
+    .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 20px rgba(25,40,70,.06);margin-top:18px}
+    ul.clean{padding-left:1rem}
+    footer{font-size:0.85rem;color:#667;margin-top:26px}
+    nav a{margin-right:14px;color:var(--accent);text-decoration:none;font-weight:600}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar" aria-hidden="true"></div>
+      <div>
+        <h1>Nermeen Abou Baker</h1>
+        <div class="tagline">Short tagline — researcher / developer / designer</div>
+        <nav>
+          <a href="#about">About</a>
+          <a href="#research">Research</a>
+          <a href="#news">News</a>
+          <a href="#publications">Publications</a>
+        </nav>
+      </div>
+    </header>
+
+    <section id="about" class="card">
+      <h2>About</h2>
+      <p>Write 2–4 sentences about who you are, what you do, and what you care about. Keep it readable and direct.</p>
+    </section>
+
+    <section id="research" class="card">
+      <h2>Research Interests</h2>
+      <ul class="clean">
+        <li>Topic 1 — short note</li>
+        <li>Topic 2 — short note</li>
+        <li>Topic 3 — short note</li>
+      </ul>
+    </section>
+
+    <section id="news" class="card">
+      <h2>News</h2>
+      <ul>
+        <li><strong>2025-10-31</strong> — Launched the new site.</li>
+        <li><strong>2025-06-01</strong> — Published paper on something interesting.</li>
+      </ul>
+    </section>
+
+    <section id="publications" class="card">
+      <h2>Publications</h2>
+      <ol>
+        <li>Title. Journal. Year. <em>Short note.</em></li>
+      </ol>
+    </section>
+
+    <footer>
+      Contact: <a href="mailto:nermeen.baker@hs-ruhrwest.de">you@example.com</a> · <a href="https://github.com/nermeenaboubaker">Github</a>
+    </footer>
+  </div>
+</body>
+</html>
